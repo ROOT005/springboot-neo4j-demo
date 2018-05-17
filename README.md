@@ -5,4 +5,3 @@
 * 
 * 导入数据库:
 `./neo4j-admin load --from=~/***.dump --database=graph.db --froce`
-`./neo4j start`
