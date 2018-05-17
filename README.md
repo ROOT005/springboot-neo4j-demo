@@ -1,4 +1,3 @@
-# springboot-neo4j-demo
 ## 使用springboot操作neo4jh
 
 * 对应文件夹下边后缀.dump是相应数据库备份
