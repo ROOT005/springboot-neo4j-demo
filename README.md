@@ -1,5 +1,5 @@
-## relationship使用springboot操作neo4j
-* (The project relationship is show how to deal with neo4j by springboot) 
+## relationship使用springboot操作neo4j (The project relationship is show how to deal with neo4j by springboot) 
+* 
 * relationship文件夹下边后缀.dump是相应数据库备份
 * (In document of relationship, '*.dump' is the graph's backup)
 * 
