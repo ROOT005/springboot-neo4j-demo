@@ -55,14 +55,13 @@ public class DataSourceConfig extends Neo4jDataAutoConfiguration{
 		return new SessionFactory(getConfiguration(),"com.yiqian.personrel.neo4j");
 	}
 		
-	
 	@Bean(name="mysqlDataSource")
 	@Qualifier("mysqlDataSource")
 	@ConfigurationProperties(prefix="spring.datasource")
 	public DataSource dataSource() {
 		return DataSourceBuilder
 				.create()
-				.url("jdbc:mysql://localhost:3306/relationship")
+				.url("jdbc:mysql://localhost:3306/rel")
 				.driverClassName("com.mysql.jdbc.Driver")
 				.build();
 	}

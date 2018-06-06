@@ -38,5 +38,7 @@ public class Person {
 	public List<RelationShip> getFriends(){
 		return friends;
 	}
-	
+	public void setFriends(List<RelationShip> friends) {
+		this.friends = friends;
+	}
 }

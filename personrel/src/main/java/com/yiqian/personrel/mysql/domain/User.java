@@ -12,13 +12,16 @@ import javax.persistence.Id;
 public class User implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
+	//自增
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	//自增
 	private Long id;
 	
 	@Column
 	private String name;
+	private String passwd;
+	private int cityId;
+	private String email;
 	
 	public String getName() {
 		return name;
@@ -26,6 +29,25 @@ public class User implements Serializable{
 	
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public String getPasswd() {
+		return passwd;
+	}
+	public void setPasswd(String passwd) {
+			this.passwd = passwd;
+	}
+	public int getCityId() {
+		return cityId;
+	}
+	public void setCityId(int cityId) {
+		this.cityId=cityId;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	public Long getId() {
 		return id;

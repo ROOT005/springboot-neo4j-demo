@@ -36,7 +36,6 @@ public class RelationController {
 	public  Optional<User> findById(@PathVariable Long id) {
 		Optional<Person> person = relationshipService.findById(id);
 		Optional<User> user = personService.findById(person.get().getUid());
-		System.out.println(person.get().getUid());
 		return user;
 	}
 	
@@ -58,6 +57,8 @@ public class RelationController {
 		}
 		return new ResponseResult(500,"创建失败");
 	}
+	//添加关系
+	
 	//删
 	@RequestMapping(value="/id/{id}", method=RequestMethod.DELETE)
 	public ResponseResult delete(@PathVariable Long id) {
@@ -68,5 +69,5 @@ public class RelationController {
 		}
 		return new ResponseResult(500,"删除失败");
 	}
-	//改
+	
 }
